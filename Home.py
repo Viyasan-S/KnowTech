@@ -840,15 +840,6 @@ def community_page():
         datascience("AR/VR")
     if community == "Quantum Computing":
         datascience("Quantum Computing")
-class Chatbot:
-    @classmethod
-    async def create(cls, cookies):
-        return cls()
-
-    async def ask(self, prompt, conversation_style, simplify_response):
-        # Simulate chatbot response
-        return {'text': 'Chatbot response'}
-    
 def chatbot_page():
     
     def ask(prompt):
@@ -888,15 +879,12 @@ def chatbot_page():
 
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
-
-            full_response = await ask_bot(prompt)
-
+            full_response = asyncio.run(ask_bot(prompt))
             
         st.session_state.messages.append(
             {"role": "assistant", "content": full_response}
         )
         st.experimental_rerun()
-    
     
 def profile_page():
     nImage = db.child(st.session_state.user['localId']).child("Image").get().val()
