@@ -27,6 +27,13 @@ extra-streamlit-components==0.1.56
 Faker==19.3.0
 favicon==0.7.0
 firebase-admin==6.2.0
+streamlit-authenticator
+streamlit-option-menu
+matplotlib
+bz2file
+scikit-learn===1.2.2
+numpy
+pandas
 Flask==2.3.2
 fonttools==4.42.0
 frozenlist==1.4.0
