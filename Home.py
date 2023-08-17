@@ -746,7 +746,7 @@ def learn_page():
         try:
             with left_column:
                 card(
-                    title="Viyasan",
+                    title="Viyasan S",
                     text="View Details",
                     image=None,
                     url="https://knowtech-learn.streamlit.app/?page=V"
