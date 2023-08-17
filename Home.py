@@ -840,6 +840,9 @@ def community_page():
         datascience("AR/VR")
     if community == "Quantum Computing":
         datascience("Quantum Computing")
+
+# Assume imports for Chatbot and ConversationStyle
+
 def chatbot_page():
     
     def ask(prompt):
@@ -863,7 +866,6 @@ def chatbot_page():
 
     st.header("Ai Chatbot")
 
-
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
@@ -871,20 +873,23 @@ def chatbot_page():
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
+    prompt = st.text_input("User Input:")
+    if st.button("Send"):
+        if prompt:
+            st.session_state.messages.append({"role": "user", "content": prompt})
+            with st.chat_message("user"):
+                st.markdown(prompt)
 
-    if prompt := st.chat_input("What is up?"):
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt)
+            with st.chat_message("assistant"):
+                message_placeholder = st.empty()
+                full_response = asyncio.run(ask_bot(prompt))
 
-        with st.chat_message("assistant"):
-            message_placeholder = st.empty()
-            full_response = asyncio.run(ask_bot(prompt))
-            
-        st.session_state.messages.append(
-            {"role": "assistant", "content": full_response}
-        )
-        st.experimental_rerun()
+            st.session_state.messages.append(
+                {"role": "assistant", "content": full_response}
+            )
+
+# Run the app
+chatbot_page()
     
 def profile_page():
     nImage = db.child(st.session_state.user['localId']).child("Image").get().val()
