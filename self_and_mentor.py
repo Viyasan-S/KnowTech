@@ -277,7 +277,7 @@ def Mentorship(Mentors):
 
 
 if page == "V":
-    Mentorship("Viyasan")
+    Mentorship("Viyasan S")
 if page == "VBO":
     Menorship("Vishnu Balan O")
 if page == "SR":
@@ -289,7 +289,7 @@ if page == "SD":
 if page == "SP":
     Mentorship("Sathiskumar P")
 if page == "SS":
-    Mentorship("Swathi S")
+    Mentorship("Swathi V")
 if page == "YM":
     Mentorship("Yuvasree M")
 
