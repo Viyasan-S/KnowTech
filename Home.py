@@ -712,31 +712,31 @@ def learn_page():
                 title="C Programming",
                 text="Click Here",
                 image="https://static.skillshare.com/uploads/video/thumbnails/b9455fc40a4053509ef0a77b8ddb6a51/original",
-                url="http://localhost:8502/?page=C",
+                url="https://knowtech-learn.streamlit.app/?page=C",
             )
             card(
                 title="Data Science Basics",
                 text="Click Here",
                 image="https://insidebigdata.com/wp-content/uploads/2019/04/DataScience_shutterstock_1054542323.jpg",
-                url="http://localhost:8502/?page=DSB",
+                url="https://knowtech-learn.streamlit.app/?page=DSB",
             )
             card(
                 title="Java Basic",
                 text="Click Here",
                 image="https://th.bing.com/th/id/OIP.-PpueYZ_g4I0noGF_QSgCAHaEK?pid=ImgDet&rs=1",
-                url="http://localhost:8502/?page=JB",
+                url="https://knowtech-learn.streamlit.app/?page=JB",
             )
             card(
                 title="Web Development",
                 text="Click Here",
                 image="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1536x1177.jpg",
-                url="http://localhost:8502/?page=WB",
+                url="https://knowtech-learn.streamlit.app/?page=WB",
             )
             card(
                 title="Internet of Things (IoT)",
                 text="Click Here",
                 image="https://th.bing.com/th/id/OIP.K1m17o5mQh-jW0jrHKRtsAHaE8?pid=ImgDet&rs=1",
-                url="http://localhost:8502/?page=IOT",
+                url="https://knowtech-learn.streamlit.app/?page=IOT",
             )
         except:
             pass
@@ -749,50 +749,50 @@ def learn_page():
                     title="Viyasan",
                     text="View Details",
                     image=None,
-                    url="http://localhost:8502/?page=V"
+                    url="https://knowtech-learn.streamlit.app/?page=V"
                 )
                 card(
                     title="Vishnu Balan O",
                     text="View Details",
                     image=None,
-                    url="http://localhost:8502/?page=VBO"
+                    url="https://knowtech-learn.streamlit.app/?page=VBO"
                 )
                 card(
                     title="Sathyaram R",
                     text="View Details",
                     image=None,
-                    url="http://localhost:8502/?page=SR"
+                    url="https://knowtech-learn.streamlit.app/?page=SR"
                 )
                 card(
                     title="Sathish D",
                     text="View Details",
                     image=None,
-                    url="http://localhost:8502/?page=SD"
+                    url="https://knowtech-learn.streamlit.app/?page=SD"
                 )
             with right_column:
                 card(
                     title="Swathi S",
                     text="View Details",
                     image=None,
-                    url="http://localhost:8502/?page=SS"
+                    url="https://knowtech-learn.streamlit.app/?page=SS"
                 )
                 card(
                     title="Yuvasree M",
                     text="View Details",
                     image=None,
-                    url="http://localhost:8502/?page=YM"
+                    url="https://knowtech-learn.streamlit.app/?page=YM"
                 )
                 card(
                     title="Shabari K S",
                     text="View Details",
                     image=None,
-                    url="http://localhost:8502/?page=SKS"
+                    url="https://knowtech-learn.streamlit.app/?page=SKS"
                 )
                 card(
                     title="Sathiskumar P",
                     text="View Details",
                     image=None,
-                    url="http://localhost:8502/?page=SP"
+                    url="https://knowtech-learn.streamlit.app/?page=SP"
                 )
         except:
             pass
