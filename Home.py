@@ -841,7 +841,6 @@ def community_page():
     if community == "Quantum Computing":
         datascience("Quantum Computing")
     
-
 def chatbot_page():
     
     def ask(prompt):
