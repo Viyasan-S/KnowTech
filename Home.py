@@ -688,12 +688,12 @@ def task_page():
     st.title("Practice Task")
     as1,as2 = st.columns([3,1])
     with as1:
-        st.markdown("#### Task 1 - Write a program to print the sum of two numbers")
+        st.markdown("#### Task 1 - Create a simple HTML webpage with a header, navigation menu, content area, and footer using appropriate HTML tags. Style the page using CSS to make it visually appealing.")
     with as2:
         st.button("Task 1")
     as3,as4 = st.columns([3,1])
     with as3:
-        st.markdown("#### Task 2 - Write a program to print the sum of two numbers")
+        st.markdown("#### Task 2 - Set up an S3 bucket and configure it for static website hosting.")
     with as4:
         st.button("Task 2")
 
