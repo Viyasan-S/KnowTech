@@ -889,7 +889,8 @@ def chatbot_page():
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
 
-            full_response = ask_bot(prompt)
+            full_response = await ask_bot(prompt)
+
             
         st.session_state.messages.append(
             {"role": "assistant", "content": full_response}
