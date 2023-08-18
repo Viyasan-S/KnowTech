@@ -641,15 +641,19 @@ def assessment_page():
         c0,c01 = st.columns([1,1])
         with c0:
             # Display pie chart for all languages
-       if len(scores) == 1:
-          labels = [scores[0]["Language"]]
-          values = [scores[0]["Score"]]
-       else:
-          labels = [score["Language"] for score in scores]
-          values = [score["Score"] for score in scores]
+      if len(scores) == 1:
+    labels = [scores[0]["Language"]]
+    values = [scores[0]["Score"]]
+else:
+    labels = [score["Language"] for score in scores]
+    values = [score["Score"] for score in scores]
 
-colors = plt.cm.Paired.colors if len(scores) > 1 else ['blue']
-ax.pie(values, labels=labels, autopct="%1.1f%%", colors=colors)
+# Rest of your code to create and display the pie chart
+fig, ax = plt.subplots()
+ax.pie(values, labels=labels, autopct="%1.1f%%", colors=plt.cm.Paired.colors)
+ax.set_title("Language Scores")
+st.pyplot(fig)
+
 
 
 def task_page():
