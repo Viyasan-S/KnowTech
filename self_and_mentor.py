@@ -174,7 +174,7 @@ def Courses_played(Courses):
 page = st.experimental_get_query_params().get('page', ['default'])[0]
 
 if page == "C":
-    Courses_played("Data Science Intermediate")
+    Courses_played("C Programming")
 elif page == "JB":
     Courses_played("Java Basic")
 elif page == "JI":
